@@ -1,0 +1,27 @@
+{
+  "name": "agent-orchestrator",
+  "version": "1.0.0",
+  "description": "Production-grade AI agent orchestration — ReAct loops, tool dispatch, memory, and guardrails",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "example:research": "tsx examples/research-agent.ts",
+    "lint": "eslint src/ --ext .ts"
+  },
+  "author": "Stephen Velasquez",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.2.0",
+    "tsx": "^4.7.0"
+  },
+  "dependencies": {
+    "zod": "^3.22.0",
+    "uuid": "^9.0.0",
+    "pino": "^8.17.0"
+  }
+}
